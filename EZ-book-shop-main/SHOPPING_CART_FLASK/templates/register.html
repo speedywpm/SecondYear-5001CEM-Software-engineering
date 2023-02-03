@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <H1>Register</H1>
+    
+    <P>Please enter your usrname and password:</P>
+    <form action="{{page}}" method="post">
+      <label for="uname">Username:</label><br>
+      <input type="text" id="uname" name="uname" value="John"><br>
+      <label for="pwd">Password:</label><br>
+      <input type="text" id="pwd" name="pwd" value="Password"><br><br>
+      <input type="submit" value="Submit">
+      <p><a href="{{url_for('login')}}"><button>Login instead</button></a></p>
+    </form>  
+    <!--Code as reference is from the 5001CEM module aula lab task week 4 Basic UNIT project with changes in it-->
+</body>
+</html>

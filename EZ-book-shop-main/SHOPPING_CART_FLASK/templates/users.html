@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+   <body>
+      <table border = 1>
+         <thead>
+            <td>Admin</td> 
+            <td>Name</td>
+            <td>Client ID</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["isadmin"]}}</td>
+               <td>{{row["name"]}}</td>
+               <td>{{row['id']}}</td>	
+            </tr>
+         {% endfor %}
+      </table>
+       
+       <table border = 1>
+         <thead>
+            <td>Admin</td> 
+            <td>Name</td>
+            <td>Client ID</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["isadmin"]}}</td>
+               <td>{{row["name"]}}</td>
+               <td>{{row['id']}}</td>	
+            </tr>
+         {% endfor %}
+      </table>
+       <!--The idea of this full code was taken from the 5001CEM module aula lab task Lab Activity 2: Making multiple pages to be exact, may not sound relevant but the concept of displaying the table contents was taken-->
+       <!--The code itself was only for testing in early stage development stage, not used further-->
+   </body>
+</html>

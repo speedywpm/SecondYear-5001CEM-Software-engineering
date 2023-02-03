@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+   <body>
+       <p>To inster new stock click the button</p>
+       <p><a href="{{url_for('updatenewstock')}}"><button>Add new stock</button></a></p> 
+      <table border = 1>
+         <thead>
+            <td>ID</td> 
+            <td>Name</td>
+            <td>Author</td>
+            <td>ISBN-13</td> 
+            <td>Price</td>
+            <td>Date</td>
+            <td>Description</td>
+            <td>Image</td>
+            <td>TradePrice</td>
+            <td>Quantity</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["id"]}}</td>
+               <td>{{row["name"]}}</td>
+               <td>{{row["author"]}}</td>
+               <td>{{row['code']}}</td>
+               <td>{{row["price"]}}</td>
+               <td>{{row['date']}}</td>
+               <td>{{row['description']}}</td>
+               <td><img src="/static/images/{{row['image']}}" width="80px" height="100px"></td>
+               <td>{{row["tradeprice"]}}</td>
+               <td>{{row["quantity"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+       <p>To go back to the store click the button</p>
+       <p><a href="{{url_for('products')}}"><button>Return to the store</button></a></p> 
+       
+   </body>
+    <!--The idea of this full code was taken from the 5001CEM module aula lab task Lab Activity 2: Making multiple pages to be exact, may not sound relevant but the concept of displaying the table contents was taken-->
+</html>

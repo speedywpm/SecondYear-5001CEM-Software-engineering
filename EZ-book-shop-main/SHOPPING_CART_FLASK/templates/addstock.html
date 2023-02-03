@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stock inventory update</title>
+</head>
+<body>
+    <H1>Stock inventory update</H1>
+    <!--This is the code for the form of adding new stock, what it contains is basically html form where user inputs their desired values and it provides them to the updatenewstock() function from main.py to do further actions-->
+    <p><a href="{{url_for('stocklevel')}}"><button>Return to previous screen</button></a></p>
+    <P>Please enter your desired book to add to stock, please note you can only add genuine books without a duplicate code:</P>
+    <form action="{{page}}" method="post">
+      <label for="aiidd">ID:</label><br>
+      <input type="text" id="aiidd" name="aiidd"><br>
+      <label for="bname">Book name:</label><br>
+      <input type="text" id="bname" name="bname"><br>
+      <label for="aauth">Author:</label><br>
+      <input type="text" id="aauth" name="aauth"><br>
+      <label for="ddate">Publication date:</label><br>
+      <input type="date" id="ddate" name="ddate"><br>
+      <label for="ccode">ISBN-13:</label><br>
+      <input type="text" id="ccode" name="ccode"><br><br>
+      <label for="ddscr">Description:</label><br>
+      <textarea id="ddscr" name="ddscr" rows="4" cols="30"></textarea><br>
+      <label for="iidir">Image directory:</label><br>
+      <input type="text" id="iidir" name="iidir" value='product-images/'><br>
+      <label for="tprice">Trading price:</label><br>
+      <input type="range" min="1" max="100" id="tprice" name="tprice" oninput="this.nextElementSibling.value = this.value"><output>50</output><br> <!--oninput shows the value of the slider to the user, to reference this thing was taken from this website https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value-->
+      <label for="aprice">Retail price:</label><br>
+      <input type="range" id="aprice" name="aprice" oninput="this.nextElementSibling.value = this.value"><output>50</output><br><!--oninput shows the value of the slider to the user, to reference this thing was taken from this website https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value-->
+      <label for="quant">Quantity:</label><br>
+      <input type="range" min="1" max="20" id="quant" name="quant" oninput="this.nextElementSibling.value = this.value"><output>10</output><br><!--oninput shows the value of the slider to the user, to reference this thing was taken from this website https://stackoverflow.com/questions/10004723/html5-input-type-range-show-range-value-->
+      <input type="submit" value="Submit">
+    </form>     
+    <!--The idea of this full code was taken from the 5001CEM module aula lab task Lab Activity 2: Making multiple pages to be exact, may not sound relevant but the concept of the form was taken-->
+</body>
+</html>
