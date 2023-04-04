@@ -17,16 +17,16 @@ A simple, functional online book shop built using Flask, HTML, CSS, and SQLAlche
 3. Open your terminal and navigate to the extracted folder using the cd command.
 4. Run the following commands to install the necessary dependencies:
 
-`pip install Flask`
-`pip install Flask-SQLAlchemy`
-`pip install flask-cors`
-`sudo apt update`
-`sudo apt-get install python3-venv`
-`python3 -m venv venv`
-`. venv/bin/activate`
-`cd SHOPPING_CART_FLASK`
-`export FLASK_APP=main`
-`flask run --host=0.0.0.0`
+`pip install Flask` <br />
+`pip install Flask-SQLAlchemy` <br />
+`pip install flask-cors` <br />
+`sudo apt update` <br />
+`sudo apt-get install python3-venv` <br />
+`python3 -m venv venv` <br />
+`. venv/bin/activate` <br />
+`cd SHOPPING_CART_FLASK` <br />
+`export FLASK_APP=main` <br />
+`flask run --host=0.0.0.0` <br />
 
 5. Follow the instructions provided in the repository for setting up the checkout system and updating the necessary configurations.
 6. To run the application, use the following command:
