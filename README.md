@@ -56,6 +56,3 @@ All necessary documentation, including installation guides, testing regimes, qua
 * Gurvinder (Student ID: 10248274): Helped with common issues and provided guidance on working with virtual environments.
 * Luke (Student ID: 10107753): Assisted with Flask concepts and provided explanations for various functions.
 
-## License
-
-This project is licensed under the MIT License.
